@@ -3,8 +3,6 @@ package cn.qd.peiwen.autolayout.attr;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hisense.hiautolayout.attr.AutoAttr;
-
 /**
  * Created by zhy on 15/12/5.
  */

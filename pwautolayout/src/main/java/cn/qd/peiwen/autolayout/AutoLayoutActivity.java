@@ -1,7 +1,6 @@
 package cn.qd.peiwen.autolayout;
 
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -9,12 +8,13 @@ import cn.qd.peiwen.autolayout.layout.AutoCardView;
 import cn.qd.peiwen.autolayout.layout.AutoFrameLayout;
 import cn.qd.peiwen.autolayout.layout.AutoLinearLayout;
 import cn.qd.peiwen.autolayout.layout.AutoRelativeLayout;
+import cn.qd.peiwen.mvp.MVPActivity;
 
 
 /**
  * Created by zhy on 15/11/19.
  */
-public class AutoLayoutActivity extends AppCompatActivity
+public abstract class AutoLayoutActivity extends MVPActivity
 {
     private static final String LAYOUT_LINEARLAYOUT = "LinearLayout";
     private static final String LAYOUT_FRAMELAYOUT = "FrameLayout";
