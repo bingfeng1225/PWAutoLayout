@@ -28,7 +28,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.github.bingfeng1225:PWTools:409084eb96'
+    implementation 'com.github.bingfeng1225:PWTools:b88c26d3fe'
     implementation 'com.github.bingfeng1225:PWMVPTools:1770664fd4'
 
     implementation 'com.android.support:cardview-v7:28.0.0'
