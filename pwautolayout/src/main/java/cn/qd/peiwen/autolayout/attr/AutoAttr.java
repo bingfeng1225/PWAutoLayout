@@ -11,6 +11,7 @@ import cn.qd.peiwen.autolayout.AutoLayout;
  */
 public abstract class AutoAttr {
     protected int pxVal;
+    protected boolean design = true;
 
     public AutoAttr(int pxVal) {
         this.pxVal = pxVal;
@@ -24,10 +25,21 @@ public abstract class AutoAttr {
         this.pxVal = pxVal;
     }
 
+    public boolean isDesign() {
+        return design;
+    }
+
+    public void setDesign(boolean design) {
+        this.design = design;
+    }
+
     protected abstract void execute(View view, int val);
 
     public void apply(View view) {
-        int val =  AutoLayout.getInstance().getPercentSize(pxVal);
+        int val = pxVal;
+        if(this.isDesign()) {
+            val = AutoLayout.getInstance().getPercentSize(pxVal);
+        }
         execute(view, val);
     }
 
