@@ -29,7 +29,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.github.bingfeng1225:PWTools:a1998386e0'
-    implementation 'com.github.bingfeng1225:PWMVPTools:bb0a3d9ba7'
+    implementation 'com.github.bingfeng1225:PWMVPTools:e41b41c397'
 
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
